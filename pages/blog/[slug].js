@@ -1,25 +1,51 @@
-import React from "react";
+import React, { useState, useEffect} from 'react';
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
 import marked from "marked";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IconContext } from "react-icons";
 import Sidebar from '../../components/navigation/sidebar'
 import styles from '../styles.module.css'
 
 const Post = ({ htmlString, data, links }) => {
-  return (
-    <>
+  const [visible, setVisible] = useState(true)
+  const toggleVisibility = () =>{
+    setVisible(!visible)
+  }
+  if(visible === false){
+    //*we don't show the sidebar if visible is set to false
+    return(
+      <>
       <Head>
         <title>{data.title}</title>
         <meta title="description" content={data.description} />
       </Head>
+      <IconContext.Provider value={{size:"2em", className: "global-class-name" }}>
+  <div>
+  <GiHamburgerMenu style={{position:'fixed'}} onClick={toggleVisibility} / >  </div>
+</IconContext.Provider>
       <div className={styles.postPage}>
-      <Sidebar slugs={links}/>
       <div className={styles.pageContent} dangerouslySetInnerHTML={{ __html: htmlString }} />
       </div>
     </>
-  );
+    )
+  }
+  else{//*else we show the sidebar because visible is true 
+    return (
+      <>
+        <Head>
+          <title>{data.title}</title>
+          <meta title="description" content={data.description} />
+        </Head>
+        <div className={styles.postPage}>
+        <Sidebar click={toggleVisibility} slugs={links}/>
+        <div className={styles.pageContent} dangerouslySetInnerHTML={{ __html: htmlString }} />
+        </div>
+      </>
+    );
+  }
 };
 
 export const getStaticPaths = async () => {

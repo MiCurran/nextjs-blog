@@ -1,11 +1,9 @@
 import Link from "next/link";
 import fs from "fs";
-import Sidebar from '../components/navigation/sidebar'
 import Styles from './styles.module.css'
 
 const Home = ({ slugs }) => (
   <div className={Styles.postPage}>
-  <Sidebar slugs={slugs}/>
   <div className={Styles.nav}>
     <h1>Michael Curran Developer Blog</h1>
     <h4>A simple dev blog created with next js</h4>

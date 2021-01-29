@@ -1,6 +1,7 @@
 .postPage{
     display: flex;
     flex-direction: row;
+    padding-right: 5%;
 }
 
 
@@ -26,3 +27,13 @@
 .pageContent h2, .pageContent h1{
     color: #0905eb;
 }
+
+.pageContent{
+    margin-left: 25%;
+}
+
+@media only screen and (min-width: 900px) {
+    .postPage{
+        padding-right: 25%;
+    }
+  }
