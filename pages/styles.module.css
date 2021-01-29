@@ -1,0 +1,28 @@
+.postPage{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: -8px;
+}
+
+.nav > div{
+    margin: 2em
+}
+
+.nav > div a {
+    font-size: 2.4em;
+    text-transform: uppercase;
+    color: #0905eb;
+}
+
+.pageContent h2, .pageContent h1{
+    color: #0905eb;
+}
