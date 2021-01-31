@@ -1,5 +1,9 @@
 # Simple Next.JS Blog
 
+![blogImg](./public/nextblog.png)  
+  
+
+![](https://img.shields.io/github/last-commit/MiCurran/nextjs-blog)  ![](https://img.shields.io/github/languages/code-size/MiCurran/nextjs-blog) ![](https://img.shields.io/github/package-json/v/MiCurran/nextjs-blog)
 ## How it works
 Write posts in markdown and place them in the /posts directory.  
 Markdown "posts" are parsed with [marked](https://www.npmjs.com/package/marked) and [grey-matter](https://www.npmjs.com/package/gray-matter) to create meta-data and html.
@@ -15,3 +19,6 @@ Markdown "posts" are parsed with [marked](https://www.npmjs.com/package/marked) 
 5. Start the project
 > npm run dev
 6. Navigate to [localhost:3000](http://localhost:3000)!
+
+## Check it out!
+> [nextjs-blog.micurran.vercel.app](https://nextjs-blog.micurran.vercel.app)
