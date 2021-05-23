@@ -1,7 +1,5 @@
 # Simple Next.JS Blog
-
-![blogImg](./public/nextblog.png)  
-  
+ 
 
 ![](https://img.shields.io/github/last-commit/MiCurran/nextjs-blog)  ![](https://img.shields.io/github/languages/code-size/MiCurran/nextjs-blog) ![](https://img.shields.io/github/package-json/v/MiCurran/nextjs-blog)
 ## How it works
