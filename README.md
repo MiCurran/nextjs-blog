@@ -1,7 +1,7 @@
 # Simple Next.JS Blog
  
 
-![](https://img.shields.io/github/last-commit/MiCurran/nextjs-blog)  ![](https://img.shields.io/github/languages/code-size/MiCurran/nextjs-blog) ![](https://img.shields.io/github/package-json/v/MiCurran/nextjs-blog)
+![](https://img.shields.io/github/last-commit/MiCurran/nextjs-blog)  ![](https://img.shields.io/github/languages/code-size/MiCurran/nextjs-blog)
 ## How it works
 Write posts in markdown and place them in the /posts directory.  
 Markdown "posts" are parsed with [marked](https://www.npmjs.com/package/marked) and [grey-matter](https://www.npmjs.com/package/gray-matter) to create meta-data and html.
